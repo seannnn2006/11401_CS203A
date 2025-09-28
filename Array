@@ -45,3 +45,55 @@ array = (int *) realloc(array, n * sizeof(int));//使用realloc擴充原本的�
 for (int i = n / 2; i < n; i++) {
     array[i] = i + 1; // 初始化新元素
 }
+--------------------------------------------------------------
+realloc 是否改變起始位址？
+✅ 可能保持不變
+- 如果原記憶體區塊後方有足夠空間可擴充，realloc 會直接延伸原區塊。
+- 此時，起始位址不變，資料也不需搬移。
+❌ 可能改變
+- 如果原區塊後方空間不足，realloc 會：
+- 在其他位置分配一塊更大的記憶體。
+- 將原資料複製到新區塊。
+- ⚠釋放原記憶體。
+- 此時，起始位址會改變，你必須使用 realloc 的回傳值更新指標。
+--------------------------------------------------------------
+🧪begin()指向第一個元素
+🧪rbegin()指向最後一個元素
+🧪end()指向最後一個元素的下一個位置
+🧪rend()指向第一個元素的前一個位置
+🧪shrink_to_fit:reduce memory usage by freeing unused memory
+🧪push_back():加入一個已建構好的物件
+Person p1("Alice", 30); //加入現成物件  
+people.push_back(p1);  // 複製 p1 進 vector
+🧪emplace_back():直接在尾端建立物件 
+people.emplace_back("Bob", 25);  // 直接建構，不需先建立物件
+🧪emplace():在指定位置直接建構物件
+people.emplace(people.begin(), "Charlie", 40);  // 插入到最前面
+🧪append_range():一次加入多個元素
+std::vector<Person> more = { {"David", 20}, {"Eva", 35} };
+people.append_range(more);  // 將 more 的所有元素加入 people
+🧪resize:調整容器大小
+--------------------------------------------------------------
+🔹 Insertion Sort 作法
+🔧 步驟：
+- 從第 1 個元素開始。
+- 與前面元素比較，向左移動直到找到位置。
+- 插入該元素。
+- 重複直到結束。
+🔹 Selection Sort 作法
+🔧 步驟：
+- 從第 0 個元素開始，找出剩下元素中的最小值。
+- 與目前位置交換。
+- 重複直到最後一個元素。
+--------------------------------------------------------------
+char string[6] = "Hello";     // string (with '\0' at the end)
+char *words[3] = {"cat", "dog", "fish"};   // array of strings
+--------------------------------------------------------------
+ Unsorted array
+ ◦ Linear search O(n)
+ Sorted array
+ ◦ Linear search O(n)
+ ◦ Binary search O(logn)
+--------------------------------------------------------------
+Access、Update O(1)
+Insert、Delete、Traverse O(n)
