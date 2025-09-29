@@ -1,0 +1,53 @@
+ 1. Array Types and Memory:
+- Static vs Dynamic arrays - when to use each?
+Static:在編譯時就決定
+Dynamic:在執行時決定大小
+- How arrays are stored in memory (stack vs heap)
+Static:儲存在stack
+Dynamic:儲存在Heap
+- Memory layout and why it matters for performance
+連續配置:快取友善、存取快、迴圈高效/固定大小、彈性差
+非連續配置:每列可獨立配置、彈性高/存取慢、易碎片化、快取差
+
+ 2. Advanced Operations:
+- Searching algorithms (linear search, binary search)
+linear search:逐一比對陣列中的每個元素，適用未排列陣列，時間複雜度最差O(n)，最佳O(1)
+binary search:每次將搜尋範圍減半，適用於以排序陣列，最差O(logn)，最佳O(1)
+- Sorting algorithms (bubble sort, selection sort, insertion sort)
+bubble sort:相鄰元素比較並交換，最大值「浮」到尾端。/O(n^2)
+insertion sort:將元素插入前面已排序區域的正確位置。/O(n^2)，最佳O(n)
+selection sort:每輪選出最小值放到前面。/O(n^2)
+- Array manipulation (insertion, deletion, resizing)
+insertion:在指定位置插入元素，需將後面元素右移。/O(n)
+deletion:移除指定位置元素，需將後面元素左移。/O(n)
+resizing:動態陣列可用 realloc 或 std::vector::resize() 調整大小。
+
+ 3. Dynamic Memory Management:
+- Using malloc/calloc/realloc/free in C
+malloc(size):配置指定大小的記憶體(未初始化)
+calloc(n,size):配置n個元素，每個大小為size，並初始為0
+realloc(ptr,newSize):調整已配置記憶體大小
+free(ptr):釋放先前配置的記憶體空間
+- Understanding memory leaks and how to prevent them
+memory leaks:- 配置記憶體後未釋放，導致程式結束後仍佔用系統資源，常見於未呼叫 free() 或指標被覆蓋前未釋放。
+✅ 預防方式：
+- 每次 malloc / calloc 後，記得 free。
+- 使用工具檢查：如 valgrind。
+- 避免重複配置未釋放的指標。
+- Error handling for memory allocation failures
+記憶體不足時，malloc / calloc / realloc 會回傳 NULL。
+
+ 4. Performance Analysis:
+- Time complexity of different array operations
+Access O(1)
+Search O(n)/O(logn)
+Insertion/Deletion/Resize O(n)
+- Space complexity considerations
+- Static Array：固定空間，無額外配置。
+- Dynamic Array：可能配置超過實際使用量（如 vector 的 capacity）。
+- Reallocation Cost：每次 realloc 可能導致整體複製，影響效能。
+- When arrays are efficient vs inefficien
+預知資料大小 ✅ 高效（使用 static array）
+頻繁插入 / 刪除中間元素 ❌ 效能差（需移動元素）
+頻繁調整大小 ✅ 使用 vector 或 realloc
+快速存取 / 遍歷 ✅ 陣列具快取友善性
