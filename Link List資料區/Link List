@@ -51,3 +51,19 @@ next = nullptr; //初始時尚未連接下一個節點
 };
 -------------------------------------------------------------------------------------
 LinkedList 類別定義
+class LinkedList {
+private:
+Node* head;
+public:
+//建構子:初始化空串列
+LinkedList(){
+head = nullptr;
+}
+//插入新節點至尾端
+void insert(int value){
+Node* newNode = new Node(value);
+if(head==nullptr){
+head = newNode;
+}
+}
+}
