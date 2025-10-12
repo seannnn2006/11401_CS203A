@@ -1,0 +1,49 @@
+📘在單向鏈結串列中，刪除值為 5 的節點，並保持串列結構完整。
+操作步驟
+1.遍歷串列找到目標節點
+target:目前正在檢查的節點
+prev:紀錄target的前一個節點
+透過while迴圈找值為5的節點
+Node* target = head;
+Node* prev = nullptr;
+while(target!=nullptr&&target->data!=5){
+prev=target;
+target=target->next;
+}
+2.執行刪除操作
+Step a:將prev->next指向target->next，跳過目標節點
+Step b:釋放target的記憶體，避免memory leak
+if(target!=nullptr){
+prev->next = target->next;
+delete target;
+}
+📘在單向鏈結串列中，刪除第一個節點，並更新 head 指標。
+操作步驟
+1.不須遍歷串列
+只需取得head指標即可
+2.指標操作:刪除節點
+target:暫存原本的第一個節點
+Step a:將head指向第二個節點(即head->next)
+Step b:釋放原本第一個節點的記憶體
+Node* target = head;
+head = head->next;
+delete target;
+📘在單向鏈結串列中，刪除最後一個節點，並更新前一個節點的 next 為 nullptr。
+操作步驟
+1.遍歷串列找到尾端
+target:目前正在檢查的節點
+prev:紀錄target的前一個節點
+透過while迴圈找到最後一個節點(target->next==nullptr)
+Node* target = head;
+Node* prev = nullptr;
+while(target->next!=nullptr){
+prev=target;
+target=target->next;
+}
+2.執行刪除操作
+Step a:將prev->next設為nullptr,斷開尾端節點
+Step b:釋放target的記憶體，避免memory leak
+if(prev!=nullptr){
+prev->next=nullptr;
+delete target;
+}
