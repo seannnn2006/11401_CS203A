@@ -1,0 +1,45 @@
+📘 在單向鏈結串列中插入節點（值為 10）到目標節點（值為 5）之後的操作流程
+操作步驟
+1.建立新節點
+建立一個新節點insert，其data=10，next=nullptr
+Node* insert = new Node(10);
+2.尋找目標節點
+從head開始遍歷，找到值為5的節點
+這個節點就是我們要插入之後的位置
+Node* target = head->next->next;
+3.插入新節點
+Step a:讓新節點的next指向目標節點的下一個節點
+Step b:讓目標節點的next指向新節點
+insert->next = target->next;
+target->next = insert;
+✅ 小提醒
+1.插入操作不需移動其他節點，只需調整指標(時間複雜度O(1))
+2.搜尋目標節點，時間複雜度O(n)
+📘 將新節點插入到 Linked List 的開頭:在單向鏈結串列中，將新節點（值為 10）插入到串列最前端，使其成為新的 head。
+操作步驟
+1.建立新節點
+建立新節點insert，資料為10，next預設為nullptr
+Node* insert = new Node(10);
+2.不需遍歷串列
+因為插入位置是開頭，不用遍歷整個串列
+只需取得目前的Head指標即可
+3.指標操作:插入節點
+Step a:將新節點的next指向原本的head
+Step b:更新head，使其指向新節點
+insert->next = head;
+head = insert;
+📘在單向鏈結串列中，將新節點（值為 10）插入到串列的尾端
+1.建立新節點
+建立新節點insert，資料為10，next預設為nullptr
+Node* insert = new Node(10);
+2.遍歷串列找到尾端
+從head開始逐一遍歷節點
+當target->next = nullptr時，表示已達到尾端
+Node* target = head;
+while(target->next!=nullptr){
+target=target->next;
+}
+3.插入新節點
+將尾端節點的next指向新節點insert
+新節點成為串列的最後一個元素
+target->next=insert;
