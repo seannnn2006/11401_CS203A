@@ -1,0 +1,29 @@
+(Swap the value)
+void selectionSortValue(Node* head){
+for(Node* i = head; i && i->next ; i=i->next){
+Node* minNode = i;//假設目前節點i是最小值
+for(Node* j = i->next;j; j = j->next){//j是用來遍歷剩下的節點
+if(j->val < minNode->val) minNode = j;
+if(minNode!=i){
+int t = i->val;
+i->val = minNode->val;
+minNode->val = t;
+} } } }
+(pointer swapping)
+Node* selectionSortPointer(Node* head){
+if(!head) return head;//空串列直接回傳，不進行排序
+Node dummy = {0,head}; // 建立虛擬節點dummy，其next指向原始串列頭
+Node* sortedTail = &dummy; //sortedTail指向以排序區的尾端，初始為dummy
+
+while(sortedTail->next){
+Node* minPrev = sortedTail;
+for(Node* p=sortedTail->next;p&&p->next;p=p->next){
+if(p->next->val<minPrev->next->val) minPrev = p;
+}
+Node* minNode = minPrev->next;
+minPrev->next = sortedTail->next;
+sortedTail->next=minNode;
+sortedTail=sortedTail->next;
+}
+return dummy.next;//排序後的真正頭節點
+}
