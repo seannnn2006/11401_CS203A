@@ -1,0 +1,83 @@
+1. Advanced List Types:
+- Doubly linked lists - when and why to use them
+結構:每個節點有 prev（前一個）、data（資料）、next（下一個）
+適用情境：
+(1)需要「雙向走訪」的場景，例如瀏覽器的前進/後退、編輯器的復原/重做。
+(2)刪除節點時不想從頭走訪整串列。
+優點：
+(1)可以從任一節點往前或往後走訪。
+(2)刪除節點更有效率（不需找前一個）。
+缺點：
+(1)每個節點多佔一個指標空間。
+(2)程式碼實作稍微複雜。
+
+- Circular linked lists - practical applications
+結構:
+(1)最後一個節點的 next 指向頭節點，形成一個「環」。
+(2)可以是單向或雙向環狀。
+實際應用場景:
+(1)音樂播放清單:播放完最後一首歌後自動回到第一首，形成循環播放。
+(2)排程系統:作業系統中的「輪詢排程（Round Robin Scheduling）」使用環狀串列管理程序。
+(3)緩衝區（Buffer）:資料結構如環狀佇列（Circular Queue）常用於串流、網路封包處理。
+優點:
+(1)不須判斷NULL，走訪更流暢。
+(2)適合需要「重複循環」的場景。
+(3)可以從任一節點開始走訪整個串列。
+
+ 2. Complex Operations:
+- Insertion at any position (beginning, middle, end)
+beginning:
+Node* newNode = new Node(data);
+newNode->next = head;
+head = newNode;
+middle:
+Node* newNode = new Node(data);
+if (head == NULL) {
+    head = newNode;
+} else {
+    Node* temp = head;
+    while (temp->next != NULL) temp = temp->next;
+    temp->next = newNode;
+}
+插入到中間
+Node* newNode = new Node(data);
+Node* temp = head;
+for (int i = 0; i < pos - 1; i++) temp = temp->next;
+newNode->next = temp->next;
+temp->next = newNode;
+- Deletion operations (by value, by position, specific cases)
+By value
+Node* temp = head;
+Node* prev = NULL;
+while (temp != NULL && temp->data != value) {
+    prev = temp;
+    temp = temp->next;
+}
+if (temp == NULL) return; // 未找到
+if (prev == NULL) head = head->next; // 刪除頭節點
+else prev->next = temp->next;
+delete temp;
+By position
+if (pos == 0) {
+    Node* temp = head;
+    head = head->next;
+    delete temp;
+} else {
+    Node* temp = head;
+    for (int i = 0; i < pos - 1; i++) temp = temp->next;
+    Node* toDelete = temp->next;
+    temp->next = toDelete->next;
+    delete toDelete;
+}
+特殊情況處理
+(1)串列為空 → 不執行
+(2)刪除尾節點 → temp->next == NULL
+(3)刪除唯一節點 → head != NULL && head->next == NULL
+- Searching and finding nodes efficiently
+Node* temp = head;
+while (temp != NULL) {
+    if (temp->data == target) return temp;
+    temp = temp->next;
+}
+return NULL;
+- Reversing a linked list (iterative and recursive approaches)
