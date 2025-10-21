@@ -1,0 +1,55 @@
+Stack(陣列實作)筆記:以陣列實作時，所有元素都儲存在一個固定大小的陣列中，並透過 top 指標追蹤堆疊頂端。
+所需變數:
+(1)stack[MAX_SIZE]:實際儲存堆疊元素的陣列空間
+(2)top:指向目前堆疊頂端的索引，初始值-1
+(3)MAX_SIZE:堆疊最大容量(陣列大小)
+基本操作:
+(1)Push
+if(top<MAX_SIZE-1)//檢查是否為滿{
+stack[++top]=value;
+}else{
+//Overflow:堆疊已滿
+}
+(2)Pop
+if(top>=0)//檢查是否為空{
+value = stack[top--];
+}else{
+//Underflow:堆疊為空
+}
+(3)Peek
+if(top>=0){
+return stack[top];
+}else{
+//堆疊為空，無法查看
+}
+⚠️額外負擔與注意事項
+Overflow檢查:top==MAX_SIZE-1(無法再push新元素)
+Underflow檢查:top==-1(無元素可pop)
+動態擴充(若使用動態陣列):
+1.需配置更大的陣列空間(使用realloc())
+2.將原有資料複製到新陣列中
+3.top不需重設，但MAX_SIZE必須更新
+------------------------------------------------------------------------------------
+Stack(陣列實作)筆記:以陣列實作時，常使用環狀緩衝區（Circular Buffer）技術來避免資料搬移
+所需變數:
+(1)queue[MAX_SIZE]:儲存佇列元素的陣列空間
+(2)front:指向佇列中第一個元素的索引
+(3)rear:指向佇列中最後一個元素的索引
+(4)MAX_SIZE:佇列最大容量
+(5)count(可選):目前佇列中的元素數量，用來簡化判斷
+幾本操作:
+(1)Enqueue(加入元素)
+rear = (rear + 1) % MAX_SIZE;
+queue[rear] = value;
+(2)Dequeue(移除元素)
+front = (front + 1) % MAX_SIZE;
+value = queue[front];
+⚠️額外負擔與注意事項
+Overflow:(rear+1)%MAX_SIZE==front(佇列已滿，無法加入元素)
+Underflow:front=rear(佇列為空，無元素可移除)
+環狀邏輯:使用%MAX_SIZE(指標自動繞回陣列開頭)
+📌使用count變數，可簡化判斷:
+// 判斷是否為空
+if (count == 0) { /* empty */ }
+// 判斷是否已滿
+if (count == MAX_SIZE) { /* full */ }
