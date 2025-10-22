@@ -1,0 +1,65 @@
+Stack(Linked List實作):使用Linked List實作stack時，堆疊頂端即為鏈結串列的頭節點
+基本結構及變數:
+typedef struct Node{
+int data;
+struct Node* next;
+}Node;
+
+Node* top = NULL; //指向堆疊頂端
+基本操作:
+1.Push
+Node* newNode = malloc(sizeof(Node));//建立新節點
+newNode->data = value;
+newNode->next = top;//新節點的next指向原本的top
+top = newNode; //更新top的新節點
+
+2.Pop
+if(top!=NULL){//檢查堆疊是否為空
+Node* temp = top; //用temp暫存預刪值
+top = top->next; //更新top值
+free(temp);//刪除暫存值
+}
+
+額外負擔及挑戰
+1.動態記憶體管理:每次push都需malloc()，pop時需free()
+2.指標管理:必須避免記憶體洩漏與懸空指標
+3.無固定容量限制:不須預設MAX_SIZE，但可能導致記憶體耗盡
+4.無隨機存取；只能從top逐層往下存取
+----------------------------------------------------------------------------------------
+Queue(Linked List實作):使用Linked List實作queue時，需追蹤前端與尾端節點
+基本結構與變數:
+typedef struct Node{
+int data;
+struct Node* next;
+}Node;
+
+Node* front = NULL; //指向佇列前端
+Node* rear = NULL; //指向佇列尾端
+基本操作:
+1.Enqueue
+Node* newNode = malloc(sizeof(Node))//建立新節點;
+newNode->data = value;
+newNode->next = NULL; //表示目前它還沒有連接其他節點
+
+if(rear!=NULL){
+rear->next = newNode;
+rear = newNode//若佇列非空，將rear->next指向新節點;
+}else{
+front = rear = newNode; //空佇列時，front和rear都要指向新節點
+}
+
+2.Dequeue
+if(front!=NULL){
+Node* temp = front;
+front = front->next;
+if(front==NULL){
+rear=NULL;//若佇列變空，rear也須設為NULL
+}
+free(temp);
+}
+
+額外負擔與挑戰:
+1.雙指標管理:為達O(1)操作，需同時維護front與rear
+2.空佇列處理:出佇列後若為空，須同步將rear=NULL
+3.動態記憶體管理:每次Enqueue都需malloc()，Dequeue時需free()
+4.無隨機存取:只能從front依序取出資料
