@@ -3,7 +3,7 @@ Linked List是一種線性資料結構，由一系列Node組成，每個節點�
 在C++中常見的定義
 struct Node {
     int data;
-    Node* next;
+    struct Node* next;
 };
 🧠插入/刪除效率高:不需移動整個資料結構，只需調整指標
 🧠與陣列不同，它的元素（節點）不儲存在連續記憶體位置中
