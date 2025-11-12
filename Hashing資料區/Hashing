@@ -1,0 +1,24 @@
+定義:Hashing是種技術，用來將key轉換成index，以便快速儲存與查找資料
+目標:快速根據key找到資料，避免逐筆搜尋
+映射流程:Key->Hash Function->Index->Value
+Hash Function:一種數學規則，將key轉換成記憶體中的位置(通常是陣列索引)
+📦 Hash Table是什麼?
+答:使用Hashing的資料結構，儲存key-value pair，並支援平均O(1)的操作效率
+📦 儲存方式:
+將key經由hash function映射到一個bucket(陣列位置)
+📦 碰撞處理:
+1. Chaining:每個bucket是一個linked list
+2. Open Addressing:碰撞時尋找下一個空位
+📦 操作效率:
+1.插入、刪除、查詢平均都是O(1)
+2.最壞情況(大量碰撞)可能退化為O(n)
+📏為什麼要選擇適當的Table Size
+Hash Table 的核心是：key->hash function->index(mod m)
+其中m是表格大小(bucket數量)，選得好可以減少碰撞、提升效率
+✅建議:
+1.選擇質數:
+(1)避免重複模式:質數能讓hash function的結果分布更均勻
+(2)常見質數範例:1009、10007、104729(越大越能容納更多資料)
+2.特例:大型表格(如2的32次方)
+前提:hash function必須混合bits的夠好(ex:使用位元運算、乘法、位移)
+否則容易出現碰撞，尤其在低階bits不均勻時
