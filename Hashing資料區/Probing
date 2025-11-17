@@ -1,0 +1,35 @@
+📌 定義：什麼是 Probing？
+答: Probing是一種碰撞處理技術，專用於Open Addressing型的Hash Table。
+當多個key經由hash function映射到相同的index(發生碰撞)時，Probing定義
+演算法如何系統性搜尋下一個可用的空位
+
+✅ 簡化定義:
+Probing = 發生碰撞後，系統性地搜尋下一個空位的過程
+
+🧠Probing 的用途
+1.解決Open Addressing 中的碰撞問題
+2.維持Hash Table 的空間效率(不使用額外結構linked list)
+3.提升查詢與插入的效能
+
+🔁 Probing 方法比較
+1.Linear Probing:
+(1)Formula: (h(k)+i) mod m
+(2)Behavior:每次碰撞後，往下一格嘗試插入，形成線性序列
+(3)Pros/Cons:簡單/Primary Clustering(群聚效應)
+
+2.Quadratic Probing
+(1)Formula: (h(k) + c₁·i + c₂·i²) mod m
+(2)Behavior:間距呈現二次增長。須注意表格大小與常數選擇
+(3)Pros/Cons:減少群聚效應/可能跳過某些slot，無法查到所有slot
+
+3.Double Hashing
+(1)Formula: (h₁(k) + i·h₂(k)) mod m
+(2)Behavior:使用兩個 hash function：h₁(k) 決定初始位置，h₂(k) 決定探查步長。
+            探查序列依 key 而異，分布更均勻。
+(3)Pros/Cons:分布均勻/計算複雜
+
+🔑 Hash Table Probing 的關鍵特性
+1.Deterministic(確定性) : 同一個key每次都會產生相同的探查序列，確保行為可預測
+2.Bounded : 最多只會探查m個slot(m為表格大小)，避免無限迴圈或超出範圍
+3.Cluster Formation : 某些方法（如 Linear Probing）容易形成連續填滿區域，導致查詢與插入效率下降。
+4.Load Factor Sensitivity : 當載入因子 α = n/m 增加時，探查長度與時間複雜度會急遽上升。
