@@ -1,7 +1,7 @@
 #include "hash_fn.hpp"
 
 int myHashInt(int key, int m) {
-    unsigned int hash = key * key + key * 3 + 17;
+    unsigned int hash = key * key + key * 7 + 101;
     return hash % m; 
 }
 
