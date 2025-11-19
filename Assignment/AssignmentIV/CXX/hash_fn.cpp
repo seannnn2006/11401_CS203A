@@ -6,16 +6,15 @@ int myHashInt(int key, int m) {
 }
 
 int myHashString(const std::string& str, int m) {
-  if(m <= 0) return -1;
-  if(str.empty()) return -1;
+  if (m <= 0 || str.empty()) return -1;
+   
+    const int a = 31;  
+    const int b = 17;  
 
-  unsigned long sum = 0;
-  for(char c : str){
-    sum += static_cast<unsigned long>(c);
-  }
+    unsigned long long hash = 0;
+    for (char c : str) {
+        hash = (hash + a * static_cast<unsigned char>(c) + b) % m;
+    }
 
-  int index = static_cast<int>(sum % m);
-  if(index < 0)index = (index + m) % m;
-  return index;
+    return static_cast<int>(hash);
 }
-
