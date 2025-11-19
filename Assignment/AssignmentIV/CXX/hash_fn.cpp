@@ -2,7 +2,7 @@
 
 int myHashInt(int key, int m) {
     if(m <= 0) return -1;
-    int index = k % m;
+    int index = key % m;
     if(index < 0) index = (index + m) % m ;
     
     return index; 
