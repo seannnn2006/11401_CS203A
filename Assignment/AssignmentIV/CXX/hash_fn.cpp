@@ -1,8 +1,8 @@
 #include "hash_fn.hpp"
 
 int myHashInt(int key, int m) {
-    unsigned int hash = key * key + key * key * key + 17;
-    return hash % m; 
+    int hash = key * 97 + 103;
+    return hash % m;
 }
 
 int myHashString(const std::string& str, int m) {
