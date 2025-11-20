@@ -1,8 +1,13 @@
 #include "hash_fn.hpp"
 
 int myHashInt(int key, int m) {
+    if(m <= 0) return -1;
+    
     int hash = key * 97 + 103;
-    return hash % m;
+    int index = hash % m;
+    if(index < 0) index += m;
+    
+    return index;
 }
 
 int myHashString(const std::string& str, int m) {
