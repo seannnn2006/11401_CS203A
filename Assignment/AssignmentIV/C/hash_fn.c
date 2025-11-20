@@ -1,11 +1,10 @@
 #include "hash_fn.h"
-#include <stdio.h>
-#include <string.h>
 
 int myHashInt(int key, int m) {
     if (m <= 0) return -1; 
     int index = key % m;
     if (index < 0) index = (index + m) % m; 
+    
     return index;
 }
 
