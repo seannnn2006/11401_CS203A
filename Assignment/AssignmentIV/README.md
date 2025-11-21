@@ -19,8 +19,7 @@ Email: [kkevin9563@gmail.com]
     int index = hash % m;
     if(index < 0) index += m;
     
-    return index;
-}
+    return index;}
   ```
 - Rationale: [Explain your design choices and how they minimize collisions.]
 - 採用線性結構:此形式計算量小、速度快，在一般輸入下提供良好的分布
