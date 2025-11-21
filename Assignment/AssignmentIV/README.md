@@ -21,7 +21,7 @@ Email: [kkevin9563@gmail.com]
     
     return index;}
   ```
-- Rationale: [Explain your design choices and how they minimize collisions.]
+- Rationale: 
 - 採用線性結構:此形式計算量小、速度快，在一般輸入下提供良好的分布
 - 使用93與103作為乘數與偏移:質數是Hash function中常用來增加均勻性的技巧
 - 支援負數 key:可以修正負餘數，確保hash index合法
