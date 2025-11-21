@@ -11,7 +11,8 @@ Email: [kkevin9563@gmail.com]
 ## My Hash Function
 ### Integer Keys 
 - Formula / pseudocode:
-  ```h(key)=((97⋅key)+103)modm
+  ```
+  h(key) = ((97⋅key)+103) mod m
   [Your implementation here]
   ```
 - Rationale: [Explain your design choices and how they minimize collisions.]
