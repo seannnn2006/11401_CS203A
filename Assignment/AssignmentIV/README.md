@@ -12,8 +12,7 @@ Email: [kkevin9563@gmail.com]
 ### Integer Keys 
 - Formula / pseudocode:
   ```
-  h(key) = ((97⋅key)+103) mod m
-  [Your implementation here]
+  [h(key)=((97⋅key)+103) mod m]
   ```
 - Rationale: [Explain your design choices and how they minimize collisions.]
 
