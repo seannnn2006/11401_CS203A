@@ -15,6 +15,8 @@ Email: [kkevin9563@gmail.com]
   [h(key)=((97⋅key)+103) mod m]
   ```
 - Rationale: [Explain your design choices and how they minimize collisions.]
+- 1.採用線性結構:
+- 2.
 
 ### Non-integer Keys
 - Formula / pseudocode:
