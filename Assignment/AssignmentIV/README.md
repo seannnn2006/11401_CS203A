@@ -13,12 +13,12 @@ Email: [kkevin9563@gmail.com]
 - Formula / pseudocode:
   ```
   int myHashInt(int key, int m) {
-    if(m <= 0) return -1;
-    
+    if (m <= 0) return -1;
+
     int hash = key * 97 + 103;
     int index = hash % m;
-    if(index < 0) index += m;
-    
+    if (index < 0) index += m;
+
     return index;}
   ```
 - Rationale: [Explain your design choices and how they minimize collisions.]
@@ -29,18 +29,20 @@ Email: [kkevin9563@gmail.com]
 ### Non-integer Keys
 - Formula / pseudocode:
   ```text
-  int myHashString(const std::string& str, int m) {
-  if (m <= 0 || str.empty()) return -1;
-   
-    const int a = 31;  
-    const int b = 17;  
+  int myHashString(const char* str, int m) {
+    if (m <= 0 || str == NULL || strlen(str) == 0) return -1;
+
+    const int a = 31;
+    const int b = 17;
 
     unsigned long long hash = 0;
-    for (char c : str) {
-        hash = (hash + a * static_cast<unsigned char>(c) + b) % m;
+
+    
+    for (int i = 0; str[i] != '\0'; i++) {
+        hash = (hash + a * (unsigned char)str[i] + b) % m;
     }
 
-    return static_cast<int>(hash);}
+    return (int)hash;}
   ```
 - Rationale: [Explain your approach and its effectiveness for non-integer keys.]
 - 線性組合方式(先取其ASCII值，再乘上常數a，加上偏移量b):避免字元值相加過於集中
