@@ -43,6 +43,9 @@ Email: [kkevin9563@gmail.com]
     return static_cast<int>(hash);}
   ```
 - Rationale: [Explain your approach and its effectiveness for non-integer keys.]
+- 線性組合方式(先取其ASCII值，再乘上常數a，加上偏移量b):避免字元值相加過於集中
+- 分布性改善:與單純sum(c)%m相比，乘質數加偏移量更能降低碰撞率
+- 穩定性:對於相似字串(如"abc"與"abd")，雜湊值會有明顯差異，這有助於快速區分
 
 ## Experimental Setup
 - Table sizes tested (m): 10, 11, 37
