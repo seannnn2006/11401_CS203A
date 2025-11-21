@@ -107,7 +107,7 @@ Email: [kkevin9563@gmail.com]
   ```
 
 ### Result Snapshot
-- Example output for integers:
+- Output for integers:
   ```
   === Hash Function Observation (C Version) ===
 
@@ -255,7 +255,7 @@ Email: [kkevin9563@gmail.com]
   60      3
   ```
 
-- Example output for strings:
+- Output for strings:
   ```
   === String Hash (m = 10) ===
   Key     Index
