@@ -21,7 +21,7 @@ Email: [kkevin9563@gmail.com]
     
     return index;}
   ```
-  Rationale: 
+- Rationale: [Explain your design choices and how they minimize collisions.]
 - 採用線性結構:此形式計算量小、速度快，在一般輸入下提供良好的分布
 - 使用93與103作為乘數與偏移:質數是Hash function中常用來增加均勻性的技巧
 - 支援負數 key:可以修正負餘數，確保hash index合法
@@ -44,6 +44,7 @@ Email: [kkevin9563@gmail.com]
   ```
 - Rationale: [Explain your approach and its effectiveness for non-integer keys.]
 - 線性組合方式(先取其ASCII值，再乘上常數a，加上偏移量b):避免字元值相加過於集中
+- 透過逐字元處理，將字串轉換成一個整數雜湊值，方便映射至hash table
 - 分布性改善:與單純sum(c)%m相比，乘質數加偏移量更能降低碰撞率
 - 穩定性:對於相似字串(如"abc"與"abd")，雜湊值會有明顯差異，這有助於快速區分
 
