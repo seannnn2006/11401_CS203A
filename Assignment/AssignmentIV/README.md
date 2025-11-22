@@ -20,9 +20,12 @@ Email: [kkevin9563@gmail.com]
     return index;}
   ```
 - Rationale: [Explain your design choices and how they minimize collisions.]
-- 採用線性結構:此形式計算量小、速度快，在一般輸入下提供良好的分布
-- 使用93與103作為乘數與偏移:質數是Hash function中常用來增加均勻性的技巧
-- 支援負數 key:可以修正負餘數，確保hash index合法
+- 檢查輸入:if(m <= 0) return -1; (確保hash table 大小合法)
+- 乘加運算:unsigned int hash = (unsigned int)key * 41 + 17;
+- XOR混合:hash ^= (key * 59 + 19); 
+- 多層混合:乘數+XOR，避免單純線性關係，打散規律
+- 質數選擇:乘數與偏移量選質數，減少模式化分布
+- 位元打散:XOR能混合高位與低位資訊，降低集中度
 
 ### Non-integer Keys
 - Formula / pseudocode:
@@ -43,8 +46,10 @@ Email: [kkevin9563@gmail.com]
     return (int)hash;}
   ```
 - Rationale: [Explain your approach and its effectiveness for non-integer keys.]
-- 線性組合方式(先取其ASCII值，再乘上常數a，加上偏移量b):避免字元值相加過於集中
-- 透過逐字元處理，將字串轉換成一個整數雜湊值，方便映射至hash table
+- 檢查輸入:if (m <= 0 || str == NULL || strlen(str) == 0) return -1;(確保hash table 大小合法)
+- 常數選擇:a=31(打散字元規律性),b=17(避免字串只有一個字元)
+- 逐字元累加:透過逐字元處理，將字串轉換成一個整數雜湊值，方便映射至hash table
+- 字串轉數值:將字元逐一轉換成整數
 - 分布性改善:與單純sum(c)%m相比，乘質數加偏移量更能降低碰撞率
 - 穩定性:對於相似字串(如"abc"與"abd")，雜湊值會有明顯差異，這有助於快速區分
 
