@@ -42,3 +42,6 @@ Before you begin, ensure you have the following:
 - Enable GitLens extension for enhanced Git insights.
 
 By following these steps, you can easily connect and manage your GitHub repositories using Visual Studio Code.
+
+成果如下:
+![Image](https://github.com/user-attachments/assets/cf73e27e-8073-4196-8be4-f606cfb92f79)
