@@ -112,10 +112,10 @@ Email: [kkevin9563@gmail.com]
 ### Result Snapshot
 - Output for integers:
   ```
+  ![Image](https://github.com/user-attachments/assets/f2ebf820-fbd1-4bbc-be2f-856fdf1e6ca2)
   === Hash Function Observation (C Version) ===
 
   === Table Size m = 10 ===
-  Attach the image:<img width="815" height="543" alt="Image" src="https://github.com/user-attachments/assets/f2ebf820-fbd1-4bbc-be2f-856fdf1e6ca2" />
   Key     Index
   -----------------
   21      4
