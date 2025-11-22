@@ -110,82 +110,11 @@ Email: [kkevin9563@gmail.com]
   ```
 
 ### Result Snapshot
-![Image](https://github.com/user-attachments/assets/a64795c2-76bc-4a5f-9934-0fda426b28fe)
-![Image](https://github.com/user-attachments/assets/8709c99e-9910-4d13-99c4-0b01fdd3b5ba)
-![Image](https://github.com/user-attachments/assets/f2ebf820-fbd1-4bbc-be2f-856fdf1e6ca2)
 - Output for integers:
-  ```
-  === Hash Function Observation (C Version) ===
+![Image](https://github.com/user-attachments/assets/a64795c2-76bc-4a5f-9934-0fda426b28fe)
+![Image](https://github.com/user-attachments/assets/f2ebf820-fbd1-4bbc-be2f-856fdf1e6ca2)
+![Image](https://github.com/user-attachments/assets/8709c99e-9910-4d13-99c4-0b01fdd3b5ba)
 
-  === Table Size m = 10 ===
-  Key     Index
-  -----------------
-  21      4
-  22      4
-  23      6
-  24      0
-  25      2
-  26      4
-  27      2
-  28      2
-  29      8
-  30      6
-  51      0
-  52      0
-  53      0
-  54      4
-  55      6
-  56      2
-  57      8
-  58      6
-  59      4
-  60      8 
-  === Table Size m = 11 ===
-  Key     Index
-  -----------------
-  21      10
-  22      9
-  23      2
-  24      0
-  25      1
-  26      4
-  27      2
-  28      5
-  29      1
-  30      7
-  51      10
-  52      8
-  53      10
-  54      7
-  55      0
-  56      5
-  57      4
-  58      10
-  59      8
-  60      9
-  === Table Size m = 37 ===
-  Key     Index
-  -----------------
-  21      0
-  22      12
-  23      31
-  24      22
-  25      8
-  26      36
-  27      34
-  28      4
-  29      36
-  30      28
-  51      1
-  52      20
-  53      36
-  54      1
-  55      20
-  56      5
-  57      29
-  58      30
-  59      28
-  60      25
   === Hash Function Observation (C++ Version) ===
 
   === Table Size m = 10 ===
