@@ -124,8 +124,11 @@ Email: [kkevin9563@gmail.com]
 
 
 - Output for strings:
+  
 ![Image](https://github.com/user-attachments/assets/d405a495-4094-4839-8376-7bd944b1aacd)
+
 ![Image](https://github.com/user-attachments/assets/0e6abc16-8cfd-4fd9-89d5-a4d556ba04a5)
+
 ![Image](https://github.com/user-attachments/assets/dc9e3d18-f8cc-4397-a129-fa422cf26e72)
 
   
