@@ -18,7 +18,7 @@ Approach（策略）：
 (1)若碰撞，則探查下一個空位
 (2)方式:Linear probing:依序往後找
         Quadratic probing:間距平方成長
-        Double probing:用第二個hash function決定探查步距
+        Double hashing:用第二個hash function決定探查步距
 優點:節省空間(不須額外list)
 缺點:容易形成clustering(群聚效應)
 適用於:空間有限、需陣列儲存
