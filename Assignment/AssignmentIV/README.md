@@ -13,12 +13,10 @@ Email: [kkevin9563@gmail.com]
 - Formula / pseudocode:
   ```
   int myHashInt(int key, int m) {
-    if (m <= 0) return -1;
-
-    int hash = key * 97 + 103;
-    int index = hash % m;
-    if (index < 0) index += m;
-
+    if(m <= 0) return -1; 
+    unsigned int hash = (unsigned int)key * 41 + 17;
+    hash ^= (key * 59 + 19); 
+    int index = (int)(hash % m);
     return index;}
   ```
 - Rationale: [Explain your design choices and how they minimize collisions.]
