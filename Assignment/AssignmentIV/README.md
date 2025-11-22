@@ -110,9 +110,9 @@ Email: [kkevin9563@gmail.com]
   ```
 
 ### Result Snapshot
+![Image](https://github.com/user-attachments/assets/f2ebf820-fbd1-4bbc-be2f-856fdf1e6ca2)
 - Output for integers:
   ```
-  ![Image](https://github.com/user-attachments/assets/f2ebf820-fbd1-4bbc-be2f-856fdf1e6ca2)
   === Hash Function Observation (C Version) ===
 
   === Table Size m = 10 ===
