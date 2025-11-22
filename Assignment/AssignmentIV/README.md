@@ -124,49 +124,11 @@ Email: [kkevin9563@gmail.com]
 
 
 - Output for strings:
-  ```
-  === String Hash (m = 10) ===
-  Key     Index
-  -----------------
-  cat     3
-  dog     5
-  bat     2
-  cow     0
-  ant     4
-  owl     9
-  bee     1
-  hen     6
-  pig     1
-  fox     4
+![Image](https://github.com/user-attachments/assets/d405a495-4094-4839-8376-7bd944b1aacd)
+![Image](https://github.com/user-attachments/assets/0e6abc16-8cfd-4fd9-89d5-a4d556ba04a5)
+![Image](https://github.com/user-attachments/assets/dc9e3d18-f8cc-4397-a129-fa422cf26e72)
 
-  === String Hash (m = 11) ===
-  Key     Index
-  -----------------
-  cat     10
-  dog     6
-  bat     1
-  cow     9
-  ant     10
-  owl     2
-  bee     1
-  hen     4
-  pig     5
-  fox     1
-
-  === String Hash (m = 37) ===
-  Key     Index
-  -----------------
-  cat     29
-  dog     17
-  bat     35
-  cow     1
-  ant     0
-  owl     21
-  bee     27
-  hen     11
-  pig     18
-  fox     14
-  ```
+  
 
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 - Example output for integers:
