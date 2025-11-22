@@ -110,6 +110,8 @@ Email: [kkevin9563@gmail.com]
   ```
 
 ### Result Snapshot
+![Image](<img width="730" height="579" alt="Image" src="https://github.com/user-attachments/assets/a64795c2-76bc-4a5f-9934-0fda426b28fe" />)
+![Image](<img width="704" height="547" alt="Image" src="https://github.com/user-attachments/assets/8709c99e-9910-4d13-99c4-0b01fdd3b5ba" />)
 ![Image](https://github.com/user-attachments/assets/f2ebf820-fbd1-4bbc-be2f-856fdf1e6ca2)
 - Output for integers:
   ```
