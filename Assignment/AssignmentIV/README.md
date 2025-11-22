@@ -111,6 +111,7 @@ Email: [kkevin9563@gmail.com]
 
 ### Result Snapshot
 - Output for integers:
+  
   === Hash Function Observation (C Version) ===
 ![Image](https://github.com/user-attachments/assets/a64795c2-76bc-4a5f-9934-0fda426b28fe)
 ![Image](https://github.com/user-attachments/assets/f2ebf820-fbd1-4bbc-be2f-856fdf1e6ca2)
