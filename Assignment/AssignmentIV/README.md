@@ -152,6 +152,8 @@ Email: [kkevin9563@gmail.com]
 - Prime vs non-prime `m`: Prime table sizes generally result in better distribution and fewer collisions.
 - Patterns or collisions: Non-prime table sizes tend to produce repetitive patterns, leading to more collisions.
 - Improvements: Use a prime table size and a well-designed hash function to enhance distribution.
+- 最佳策略：選質數作為 table size，並搭配「質數乘數 + 偏移量 + XOR/位移」的 hash function，能真正降低碰撞率。
+- Load Factor保持在0.7以下，必要時rehash
 
 ## Reflection
 1. Designing hash functions requires balancing simplicity and effectiveness to minimize collisions.
