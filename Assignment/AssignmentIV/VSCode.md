@@ -18,7 +18,7 @@
     - 輸入 `GitHub: Sign in` 並選擇
     - 完成GitHub帳號的驗證與授權
 
-3. **-複製Repository**
+3. **複製Repository**
     - 在 VSCode 打開 Command Palette
     - 輸入 `Git: Clone`並選擇
     - 貼上 GitHub repository 的 URL
