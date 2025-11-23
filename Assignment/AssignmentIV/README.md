@@ -6,7 +6,7 @@ evaluate their efficiency, and understand their applications in computer science
 
 Developer: [曾偉翔]  
 Email: [kkevin9563@gmail.com]  
-開發環境: [Window] 
+開發環境: [Windows] 
 
 ## My Hash Function
 ### Integer Keys 
