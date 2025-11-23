@@ -65,7 +65,7 @@ Email: [kkevin9563@gmail.com]
 | Table Size (m) | Index Sequence         | Observation              |
 |----------------|------------------------|--------------------------|
 | 10             | 4, 4, 6, 0, ...        | 多key對應到同個index，空間利用率低 |
-| 11             | 10, 0, 1, 2, ...       | More uniform             |
+| 11             | 10, 9, 2, 0, ...       |所有位置都有被使用，空間利用率比 m=10好，但分布不均   |
 | 37             | 20, 21, 22, 23, ...    | Near-uniform             |
 
 ## Compilation, Build, Execution, and Output
