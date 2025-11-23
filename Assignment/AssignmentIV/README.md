@@ -64,7 +64,7 @@ Email: [kkevin9563@gmail.com]
 ## Results
 | Table Size (m) | Index Sequence         | Observation              |
 |----------------|------------------------|--------------------------|
-| 10             | 1, 2, 3, 4, ...        | Pattern repeats every 10 |
+| 10             | 4, 4, 6, 0, ...        | 多key對應到同個index，空間利用率低 |
 | 11             | 10, 0, 1, 2, ...       | More uniform             |
 | 37             | 20, 21, 22, 23, ...    | Near-uniform             |
 
