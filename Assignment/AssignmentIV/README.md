@@ -154,9 +154,14 @@ Email: [kkevin9563@gmail.com]
 - Patterns or collisions: Non-prime table sizes tend to produce repetitive patterns, leading to more collisions.
 - Improvements: Use a prime table size and a well-designed hash function to enhance distribution.
 - 最佳策略：選質數作為 table size，並搭配「質數乘數 + 偏移量 + XOR/位移」的 hash function，能真正降低碰撞率。
-- Load Factor保持在0.7以下，必要時rehash
+- 多重hash function: 使用double hashing 或多種hash function結合，能在probing時打破規律性，減少群聚效應
+- Collision Resolution: 即時hash function 已經優化，碰撞仍然不可避免。透過chaining或open addressing 來維持查詢效率
+- Rehash的必要性:當Load Factor超過一定值，見建立一個更大的table，並重新計算所有元素的hash值
 
 ## Reflection
 1. Designing hash functions requires balancing simplicity and effectiveness to minimize collisions.
-2. Table size significantly impacts the uniformity of the hash distribution, with prime sizes performing better.
+2. Table size significantly impacts the uniformity of the hash distribution, with prime sizes performing better.(m=101比m=100更能分散key)
 3. The design using a prime table size and a linear transformation formula produced the most uniform index sequence.
+4. 在公式參數選擇中，要確保a和m互質，互質能保證輸入序列映射到完整範圍，例如a=93，m=101互質，能產生均勻分布
+5. 設計hash function避免簡單的模式化設計，像是只用ASCII值相加("abc" 與 "cab" 的字元和相同，這些設計容易讓相似 key 映射到相同位置)，盡量加入位移或乘數，打破規律
+6. 讓key的不同部分影響hash值:設計hash function時，應確保key的每個元素或位元都能參與計算，例如:Polynomial rolling hash，避免只依賴某一部分造成分布不均
