@@ -143,9 +143,9 @@ Email: [kkevin9563@gmail.com]
   ```
 - Example output for strings:
   ```
-  Hash table (m=10): ["cat", "dog", "bat", "cow", "ant", ...]
-  Hash table (m=11): ["fox", "cat", "dog", "bat", "cow", ...]
-  Hash table (m=37): ["bee", "hen", "pig", "fox", "cat", ...]
+  Hash table (m=10): [3, 5, 2, 0, 4, 9, 1, 6, 1, 4]
+  Hash table (m=11): [10, 6, 1, 9, 10, 2, 1, 4, 5, 1]
+  Hash table (m=37): [29, 17, 35, 1, 0, 21, 27, 11, 18, 14]
   ```
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 
