@@ -137,9 +137,9 @@ Email: [kkevin9563@gmail.com]
 - Observations: Outputs align with the analysis, showing better distribution with prime table sizes.
 - Example output for integers:
   ```
-  Hash table (m=10): [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
-  Hash table (m=11): [10, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-  Hash table (m=37): [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, ...]
+  Hash table (m=10): [4, 4, 6, 0, 2, 4, 2, 2, 8, 6, 0, 0, 0, 4, 6, 2, 8, 6, 4, 8]
+  Hash table (m=11): [10, 9, 2, 0, 1, 4, 2, 5, 1, 7, 10, 8, 10, 7, 0, 4, 5, 10, 8, 9]
+  Hash table (m=37): [0, 12, 31, 22, 8, 36, 34, 4, 36, 28, 1, 20, 36, 1, 20, 5, 29, 30, 28, 25]
   ```
 - Example output for strings:
   ```
