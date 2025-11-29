@@ -1,4 +1,5 @@
 #include "hash_fn.h"
+//hash function經由copilot提供方法進行改編
 
 int myHashInt(int key, int m) {
     if(m <= 0) return -1; 
