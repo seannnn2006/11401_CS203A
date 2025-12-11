@@ -1,18 +1,11 @@
 堆的基本操作與時間複雜度
-|  |  |  | 
-| insert(x) |  | O(\log n) | 
-| extract_root() |  | O(\log n) | 
-| peek_root() |  | O(1) | 
-| build_heap(array) |  | O(n) | 
-| heapify(i) | i | O(\log n) | 
-
-
-
-🌳 說明
-- 插入 (insert)：新元素先放在最後一個位置，再向上調整 (bubble up)。
-- 刪除根 (extract_root)：移除根節點，將最後一個元素移到根，再向下調整 (bubble down)。
-- 存取根 (peek_root)：直接讀取根節點，因為根就是最大或最小值。
-- 建堆 (build_heap)：利用 自底向上的 heapify，比逐一插入更快，時間複雜度為 O(n)。
-- 堆化 (heapify)：針對某個節點檢查並修正堆性質，通常用於刪除或建堆過程。
-
-要不要我幫你畫一個 流程圖 (insert / extract_root 的操作過程)，用數字例子展示「上浮 (bubble up)」和「下沉 (bubble down)」的步驟？這樣你的筆記會更直觀。
+1. insert(x):插入新元素並恢復堆序性(heap-order) 
+時間複雜度:O(logn)
+2. extract_root():移除根節點(最大堆->最大值;最小堆->最小值)
+時間複雜度:O(logn)
+3. peek_root():存取根節點(最大或最小)，不移除
+時間複雜度:O(1)
+4. build_heap(array):將一陣列轉換成堆結構  
+時間複雜度:O(n)
+5. heapify(i):針對某個節點i檢查並修正堆性質，通常用於刪除或建堆過程
+時間複雜度:O(logn)
