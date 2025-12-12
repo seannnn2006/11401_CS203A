@@ -1,0 +1,12 @@
+Tree:
+1. DFS:Preorder, Inorder, Postorder
+2. BFS:Level-order
+3. 基礎:父子關係
+4. 是否需要 visited[]:不需要(樹無環，天然避免重複)
+
+Graph:
+1. DFS
+2. BFS
+3. 基礎:鄰接關係(Neighbor adjacency)
+4. 是否需要 visited[]:需要（圖可能有環，必須避免重複或無限循環）
+Graph traversal = Tree traversal + visited[] to avoid cycles.
