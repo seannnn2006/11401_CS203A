@@ -5,7 +5,7 @@
 5. Goal:確保key的唯一性，並能高效的查詢、插入、刪除對應的 Value₂
 
 🔄 運作流程：Key → Hash Function → Index → Value₂
-Key又是由f(Value₁)導出
+Key 經由 hash function 推導出 Hash Value
 
 Key Concept
 1. Hash Table: 一種陣列結構，用來儲存Key-value pair，支援快速查詢、插入、刪除操作
