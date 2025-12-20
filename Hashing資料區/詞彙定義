@@ -1,4 +1,4 @@
-1. Key:用來辨識資料的唯一標籤，通常由Value₁經由hash function  f(Value₁)推導而來
+1. Key:用來辨識資料的唯一標籤，通常由Value₁經由hash function  f(Value₁)計算出index
 2. Value₂:實際要儲存或查詢資料的內容，是我們關心的資訊本體
 3. Computed Index:由f(Value₁) 計算出的整數索引，用來決定資料在Hash Table中的位置
 4. Collision:多個不同的(Value₁)經由f()映射到相同的Index，導致資料重疊
