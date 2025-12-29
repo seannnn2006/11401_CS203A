@@ -47,8 +47,6 @@
 
 
 
-[Image of Big O complexity chart]
-
 
 ---
 
