@@ -1,4 +1,4 @@
-# 🎓 11401_CS203A 資料結構 (Data Structures)
+#  11401_CS203A 資料結構 (Data Structures)
 
 > **曾偉翔 · WEIXIANG ZENG**
 >
