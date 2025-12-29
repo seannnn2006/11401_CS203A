@@ -50,14 +50,11 @@
 
 ---
 
-### 👤 個人設定檔 (Profile)
+### 👤 學習者資訊
 
-```json
-{
-  "student": "曾偉翔 (WEIXIANG ZENG)",
-  "id": "1133320",
-  "major": "Computer Science and Engineering",
-  "interests": ["Algorithm Design", "C++ System Programming"],
-  "email": "s1133320@mail.yzu.edu.tw",
-  "status": "Learning_Data_Structures_2025"
-}
+* **姓名**：曾偉翔 (WEIXIANG ZENG)
+* **學號**：1133320
+* **系所**：元智大學 資訊工程學系
+* **領域**：演算法設計 / C++ 系統開發
+* **聯繫**：[s1133320@mail.yzu.edu.tw](mailto:s1133320@mail.yzu.edu.tw)
+* **狀態**：2025 資料結構學習進行中 🚀
