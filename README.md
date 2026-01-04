@@ -38,13 +38,15 @@
 
 這是我在實作與分析過程中整理的效能速查表：
 
-| 數據結構 | 搜尋 (Search) | 插入 (Insert) | 刪除 (Delete) | 空間複雜度 |
-| :--- | :---: | :---: | :---: | :---: |
-| **Array** | $O(1)$ | $O(n)$ | $O(n)$ | $O(n)$ |
-| **Linked List** | $O(n)$ | $O(1)$ | $O(1)$ | $O(n)$ |
-| **Binary Tree** | $O(\log n)$ | $O(\log n)$ | $O(\log n)$ | $O(n)$ |
-| **Hash Table** | $O(1)$ | $O(1)$ | $O(1)$ | $O(n)$ |
-
+| 資料結構       | 插入 | 刪除 | 搜尋 | 訪問 | 備註 |
+|----------------|------|------|------|------|------|
+| Array          | O(n) | O(n) | O(n) | O(1) | 固定大小，需移動元素 |
+| Linked List    | O(1) | O(1) | O(n) | O(n) | 動態配置，指標操作 |
+| Stack          | O(1) | O(1) | -    | O(1) | LIFO 結構 |
+| Queue          | O(1) | O(1) | -    | O(1) | FIFO 結構 |
+| Binary Tree    | O(log n) | O(log n) | O(log n) | O(n) | 平衡性影響效率 |
+| Hash Table     | O(1) | O(1) | O(1) | -    | 須處理碰撞 |
+| Graph (DFS/BFS)| O(V+E) | O(V+E) | O(V+E) | -    | V: 節點數, E: 邊數 |
 
 
 
