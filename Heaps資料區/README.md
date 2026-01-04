@@ -20,7 +20,7 @@
 - 掌握 Heap 在 優先佇列 (Priority Queue) 與 Heap Sort 中的應用。
 
 ##  Big O 快速查詢
-> Heap 的操作效率主要取決於樹的高度O(logn)：
+Heap 的操作效率主要取決於樹的高度O(logn)：
 ### Heap 操作效率
 
 | 操作類型     | 時間複雜度 | 備註   | 
