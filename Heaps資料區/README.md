@@ -1,4 +1,4 @@
-# STACKS & QUEUES資料區 
+# HEAPS資料區 
 
 本資料夾收錄 CS203A 課程中與 Heap（堆積） 相關的學習筆記。Heap 是一種特殊的完全二元樹（Complete Binary Tree），廣泛應用於優先佇列（Priority Queue）與排序演算法中。
 
@@ -6,35 +6,28 @@
 
 | 檔案名稱                     | 說明                                   |
 |------------------------------|----------------------------------------|
-| `Heap定義`                      | Stack 的基本概念與操作實作             |
-| `Queue`                      | Queue 的基本概念與操作實作             |
-| `將插入及刪除應用在Max Heap`   | 使用陣列實作 Stack 與 Queue            |
-| `Operations and Time Complexity` | 使用 Linked List 實作 Stack 與 Queue |
+| `Heap定義`                      | Heap 的結構特性、完全二元樹條件與 Max/Min Heap 定義             |
+| `Why Order Means Priority in a Heap`                      | 探討 Heap 的順序性如何轉換為優先權管理（Priority）        |
+| `將插入及刪除應用在Max Heap`   | Max Heap 的插入（Heapify Up）與刪除（Heapify Down）步驟分解          |
+| `Operations and Time Complexity` | 各項操作（Insert, Extract, Build Heap）的時間複雜度分析 |
 
 ##  學習目標
 
-- 理解 Stack 與 Queue 的基本結構與操作邏輯
-- 掌握先進先出（FIFO）與後進先出（LIFO）的應用情境
-- 熟悉使用陣列與鏈結串列實作 Stack/Queue 的差異
-- 強化資料結構選擇與效能分析的能力
-- 掌握常見操作的時間與空間複雜度（Big O）
+- 理解 Heap 的兩個核心性質：結構性質（完全二元樹）與 堆積性質（Order Property）。
+- 掌握 Max Heap（根節點最大）與 Min Heap（根節點最小）的差異。
+- 熟悉如何使用 陣列 (Array) 來實作 Heap，並透過索引計算父子節點關係。
+- 熟練 Heapify 過程：包括向上調整（Shift Up）與向下調整（Shift Down）。
+- 掌握 Heap 在 優先佇列 (Priority Queue) 與 Heap Sort 中的應用。
 
 ##  Big O 快速查詢
+> Heap 的操作效率主要取決於樹的高度O(logn)：
+### Heap 操作效率
 
-### Stack 操作效率
+| 操作類型     | 時間複雜度 | 備註   | 
+|--------------|------------|------------|
+| Insert (插入) | O(logn)     | 新增至末端後向上調整 (Heapify Up)     | 
+|Delete/Extract (刪除)| O(logn)  | 移除根節點後向下調整 (Heapify Down)      |
+|Peek (查看最值） | O(1)       |直接讀取根節點     | 
+|Build Heap (建立) | O(n)       | 使用 Bottom-up 方式建立 Heap 的優化效率       | 
 
-| 操作類型     | 時間複雜度 | 空間複雜度 | 備註                   |
-|--------------|------------|------------|------------------------|
-| push（加入） | O(1)       | O(1)       | 加入至頂端             |
-| pop（移除）  | O(1)       | O(1)       | 移除頂端元素           |
-| peek（查看） | O(1)       | O(1)       | 查看頂端但不移除       |
-
-### Queue 操作效率
-
-| 操作類型     | 時間複雜度 | 空間複雜度 | 備註                   |
-|--------------|------------|------------|------------------------|
-| enqueue（加入） | O(1)    | O(1)       | 加入至尾端             |
-| dequeue（移除） | O(1) 或 O(n) | O(1)   | 若無 tail 指標則需遍歷 |
-| peek（查看） | O(1)       | O(1)       | 查看前端但不移除       |
-
-> 註：若使用陣列實作，Queue 的 dequeue 操作可能需移動元素，導致 O(n) 時間複雜度；使用 Linked List 可達 O(1)。
+> 註： 由於 Heap 是完全二元樹，其高度永遠維持在 $\log n$，因此能保證極其穩定的操作效能。
