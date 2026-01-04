@@ -14,39 +14,23 @@
 | `Probing`      | 線性探測（Linear）、平方探測（Quadratic）等解決方案               |
 | `Dictionary`                 | 雜湊表在字典（Dictionary ADT）中的實作應用          |
 | `Static vs Dynamic Hashing`                 | 靜態雜湊與動態雜湊的比較          |
+| `Efficient Searching by Reducing Search Space`                      | 透過雜湊技術有效減少搜尋空間並提升效能                   |
 | `詞彙定義`                      | 整理 Hashing 相關的重要專業術語（Terminology）                   |
-| `詞彙定義`                      | 整理 Hashing 相關的重要專業術語（Terminology）                   |
 
-## 🎯 學習目標
+##  學習目標
 
-- 理解 Stack 與 Queue 的基本結構與操作邏輯
-- 掌握先進先出（FIFO）與後進先出（LIFO）的應用情境
-- 熟悉使用陣列與鏈結串列實作 Stack/Queue 的差異
-- 強化資料結構選擇與效能分析的能力
-- 掌握常見操作的時間與空間複雜度（Big O）
+- 理解雜湊（Hashing）的運作邏輯：如何將大範圍鍵值映射至有限的索引空間
+- 掌握 Collision Resolution（碰撞解決） 的兩大體系:Open Addressing、Chaining
+- 熟悉常見 Hash Function 的數學設計與實作，避免Clustering
+- 比較 Static Hashing 與 Dynamic Hashing 在擴充性與空間利用率上的差異
+- 掌握雜湊表在平均情況下的 $O(1)$ 高效搜尋效能
 
-## ⏱ Big O 分析
+##  Big O 分析
 
-### Stack 操作效率
-
-| 操作類型     | 時間複雜度 | 空間複雜度 | 備註                   |
+### Hashing 操作效率
+> 在設計良好的情況下（適當的雜湊函數與負載因子），Hash Table 的操作效率如下：
+| 操作類型     | 平均時間複雜度 | 最壞情況 | 備註                   |
 |--------------|------------|------------|------------------------|
-| push（加入） | O(1)       | O(1)       | 加入至頂端             |
-| pop（移除）  | O(1)       | O(1)       | 移除頂端元素           |
-| peek（查看） | O(1)       | O(1)       | 查看頂端但不移除       |
-
-### Queue 操作效率
-
-| 操作類型     | 時間複雜度 | 空間複雜度 | 備註                   |
-|--------------|------------|------------|------------------------|
-| enqueue（加入） | O(1)    | O(1)       | 加入至尾端             |
-| dequeue（移除） | O(1) 或 O(n) | O(1)   | 若無 tail 指標則需遍歷 |
-| peek（查看） | O(1)       | O(1)       | 查看前端但不移除       |
-
-> 📌 註：若使用陣列實作，Queue 的 dequeue 操作可能需移動元素，導致 O(n) 時間複雜度；使用 Linked List 可達 O(1)。
-
-## 🚀 使用方式
-
-```bash
-git clone https://github.com/seannnn2006/11401_CS203A.git
-cd 11401_CS203A/STACKS & QUEUES資料區
+| Search (搜尋) | O(1)       | O(n)       | 最壞情況發生在所有鍵值都碰撞至同一個槽位            |
+| Insertion (插入)）  | O(1)       | O(n)       | 須考量負載因子 (Load Factor) 是否觸發 Rehashing           |
+| Deletion (刪除)） | O(1)       | O(n)       | 在 Open Addressing 中刪除須標記為 Deleted       |
