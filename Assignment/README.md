@@ -6,11 +6,17 @@
 
 | 檔案名稱       | 說明                     |
 |----------------|--------------------------|
-| `AssignmentIV`        | 第四次作業資料夾（包含 hash_fn.cpp 實作）     | 
-| `1133320_Assignment_V.pdf` | tree的比較及應用     | 
+| `AssignmentI`        |  建立GitHub Repository     | 
+| `AssignmentII`        | Array Selection Sort     | 
+| `AssignmentIII` | Linked List Selection Sort (Swap Value Version)    | 
+| `AssignmentIV`        |  Design  Hash Function     | 
+| `AssignmentV` | tree的比較及應用     | 
+
 
 ##  學習目標
 
+- 學習使用Github
+- 了解Array及Linked List原理並實作Selection Sort
 - 透過實際編碼實作（如 C++），強化對資料結構演算法的理解。
 - 掌握課程重點知識的應用，包含雜湊函數（Hashing）、樹狀結構等。
 - 學習撰寫標準化的作業文件與維護乾淨的程式碼架構。
