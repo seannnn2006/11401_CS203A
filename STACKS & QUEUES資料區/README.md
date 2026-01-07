@@ -11,9 +11,7 @@
 | [`Using Array to Implement`](Using%20Array%20to%20Implement) | 使用陣列實作 Stack 與 Queue |
 | [`Using Linked List to implement`](Using%20Linked%20List%20to%20implement) | 使用 Linked List 實作 Stack 與 Queue |
 | [`實作比較`](實作比較) | 陣列與鏈結串列實作方式的比較分析 |
-| [`Array vs. Linked List`](Array_vs_Linked_List.md) | 資料結構選擇的概念比較 |
 | [`講義P1-P13`](講義P1-P13) | 課堂講義內容（第 1 至 13 頁） |
-| [`Bonus`](Bonus.md) | 進階挑戰內容與延伸思考 |
 
 ##  學習目標
 
