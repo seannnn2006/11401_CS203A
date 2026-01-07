@@ -6,12 +6,13 @@
 
 | 檔案名稱                     | 說明                                   |
 |------------------------------|----------------------------------------|
-| [`Graph定義`](Graph定義)| 圖的基本構成：頂點（Vertex）與邊（Edge）            |
-| [`Graph Types`](Graph%20Types)                    | 有向圖、無向圖、加權圖與連通圖等類型分類            |
-|[`圖的表示法比較`](圖的表示法比較)   | 比較 Adjacency Matrix 與 Adjacency List 的差異            |
-|[`Pros & Cons Study: Adjacency Matrix`](Pros%20%26%20Cons%20Study%3A%20Adjacency%20Matrix)| 相鄰矩陣的優缺點與適用場景分析 |
-|[`Pros & Cons Study: Adjacency List`](Pros%20%26%20Cons%20Study%3A%20Adjacency%20List)    | 相鄰串列的優缺點與記憶體效率分析       |
-| [`遍歷方式比較`](遍歷方式比較)     |廣度優先搜尋 (BFS) 與深度優先搜尋 (DFS) 的比較                |
+| [`Graph定義`](Graph定義.md)| 圖的基本構成：頂點（Vertex）與邊（Edge）            |
+| [`Graph Types`](Graph%20Types.md)                    | 有向圖、無向圖、加權圖與連通圖等類型分類            |
+|[`圖的表示法比較`](圖的表示法比較.md)   | 比較 Adjacency Matrix 與 Adjacency List 的差異            |
+|[`Pros & Cons Study: Adjacency Matrix`](Pros%20%26%20Cons%20Study%3A%20Adjacency%20Matrix.md)| 相鄰矩陣的優缺點與適用場景分析 |
+|[`Pros & Cons Study: Adjacency List`](Pros%20%26%20Cons%20Study%3A%20Adjacency%20List.md)    | 相鄰串列的優缺點與記憶體效率分析       |
+| [`遍歷方式比較`](遍歷方式比較.md)     |      Tree vs Graph Traversal 筆記
+        |
 
 ##  學習目標
 
