@@ -6,11 +6,11 @@
 
 | Quiz | 分數 | 範圍 (Scope) |
 |------|------|--------------|
-| [`Quiz V`](QuizV.md) | 95 | Tree, Heap, Graph |
-| [`Quiz IV (Take Home)`](QuizIV.md) | 100 | Tree, Heap, Graph |
-| [`Quiz III`](QuizIII.md) | 85 | Linked List, Stacks, Queues |
-| [`Quiz II`](QuizII.md) | 85 | Linked List, Stacks, Queues |
-| [`Quiz I`](QuizI.md) | 100 | Time Complexity, Arrays |
+| [`Quiz V`](Quiz%20V.md) | 95 | Tree, Heap, Graph |
+| [`Quiz IV (Take Home)`](Quiz%20IV.md) | 100 | Tree, Heap, Graph |
+| [`Quiz III`](Quiz%20III.md) | 85 | Linked List, Stacks, Queues |
+| [`Quiz II`](Quiz%20II.md) | 85 | Linked List, Stacks, Queues |
+| [`Quiz I`](Quiz%20I.md) | 100 | Time Complexity, Arrays |
 
 
 
