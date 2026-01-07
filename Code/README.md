@@ -6,9 +6,9 @@
 
 | 檔案名稱       | 說明                     |
 |----------------|--------------------------|
-| `array_demo_incomplete.c`        | 陣列基本操作的練習範例     | 
-| `array_dynamic_memory.c` | 使用 malloc / free 進行動態陣列記憶體管理      |
-| `linked_list_memory.c` | 指標 (Pointer) 與節點記憶體分配的實作演練     | 
+| [`array_demo_incomplete.c`](array_demo_incomplete.c)      | 陣列基本操作的練習範例     | 
+|[`array_dynamic_memory.c`](array_dynamic_memory.c) | 使用 malloc / free 進行動態陣列記憶體管理      |
+| [`linked_list_memory.c`](linked_list_memory.c)| 指標 (Pointer) 與節點記憶體分配的實作演練     | 
 
 ##  關鍵概念
 
