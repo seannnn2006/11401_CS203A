@@ -10,7 +10,7 @@
 | [`Quiz IV (Take Home)`](Quiz%20IV.md) | 100 | Tree, Heap, Graph |
 | [`Quiz III`](Quiz%20III.md) | 85 | Linked List, Stacks, Queues |
 | [`Quiz II`](Quiz%20II.md) | 85 | Linked List, Stacks, Queues |
-| [`Quiz I`](Quiz%20I.md) | 100 | Time Complexity, Arrays |
+|[`Quiz I`](Quiz_I.md) | 100 | Time Complexity, Arrays |
 
 
 
