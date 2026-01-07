@@ -1,0 +1,28 @@
+
+
+## 1. Division Method
+- **公式**：`h(k) = k mod m`  
+- **舉例**：`key = 123, m = 10 → index = 3`  
+
+---
+
+## 2. Multiplication Method
+- **公式**：`h(k) = floor(m * (k * A mod 1)), 0 < A < 1`  
+- **補充**：  
+  - A 通常取黃金比例 ≈ 0.618  
+  - 適合 `m` 為 2 的次方，能有效混合 bits  
+
+---
+
+## 3. Folding Method
+- **公式**：將 key 分成數段後加總  
+- **舉例**：`key = 123456 → 分段：12 + 34 + 56 = 102`  
+
+---
+
+## 4. String Hashing
+- **公式**：對字串逐字處理，常用 **Polynomial Rolling Hash**  
+- **舉例**：  
+  \[
+  h(s) = \Big(\sum s[i] \cdot p^i\Big) \mod m
+  \]
