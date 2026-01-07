@@ -10,7 +10,7 @@
 | [`Queue`](Queue.md) | Queue 的基本概念與操作實作 |
 | [`Using Array to Implement`](Using%20Array%20to%20Implement) | 使用陣列實作 Stack 與 Queue |
 | [`Using Linked List to implement`](Using%20Linked%20List%20to%20implement) | 使用 Linked List 實作 Stack 與 Queue |
-| [`實作比較`](實作比較) | 陣列與鏈結串列實作方式的比較分析 |
+| [`實作比較`](實作比較.md) | 陣列與鏈結串列實作方式的比較分析 |
 | [`講義P1-P13`](講義P1-P13) | 課堂講義內容（第 1 至 13 頁） |
 
 ##  學習目標
