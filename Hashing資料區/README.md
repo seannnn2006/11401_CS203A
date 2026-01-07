@@ -14,7 +14,7 @@
 | [`Probing`](Probing)    | 線性探測（Linear）、平方探測（Quadratic）等解決方案               |
 | [`Dictionary`](Dictionary)               | 雜湊表在字典（Dictionary ADT）中的實作應用          |
 |  [`Static vs Dynamic Hashing`](Static%20vs%20Dynamic%20Hashing)                 | 靜態雜湊與動態雜湊的比較          |
-|[Efficient Searching by Reducing Search Space](Efficient_Searching.md)  | 透過雜湊技術有效減少搜尋空間並提升效能                   |
+|[Efficient Searching by Reducing Search Space](Efficient%20Searching%20by%20Reducing%20Search%20Space.md) | 透過雜湊技術有效減少搜尋空間並提升效能                   |
 |[`詞彙定義`](詞彙定義)                     | 整理 Hashing 相關的重要專業術語（Terminology）                   |
 
 ##  學習目標
