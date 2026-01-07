@@ -10,9 +10,9 @@
 | [`Insert`](Insert) | 插入節點的實作 |
 | [`Delete`](Delete) | 刪除節點的實作 |
 | [`Bonus`](Bonus) | 較有挑戰的內容 |
-| [`Array vs. Linked List`](Array%20vs.%20Linked%20List) | 比較陣列與鏈結串列的差異 |
+| [`Array vs. Linked List`](Array%20vs.%20Linked%20List.md) | 比較陣列與鏈結串列的差異 |
 | [`Linked List類型比較`](Linked%20List類型比較) | 單向、雙向、循環串列的差異分析 |
-| [`Trade-offs in Linked List`](Trade-offs%20in%20Linked%20List) | 討論使用 Linked List 的優缺點 |
+| [`Trade-offs in Linked List`](Trade-offs%20in%20Linked%20List.md) | 討論使用 Linked List 的優缺點 |
 | [`值 VS 指標`](值%20VS%20指標) | 探討值傳遞與指標傳遞的差異 |
 
 ##  學習目標
