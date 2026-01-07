@@ -6,7 +6,7 @@
 
 | 檔案名稱 | 說明 |
 |----------|------|
-| [`Stack`](Stack) | Stack 的基本概念與操作實作 |
+| [`Stack`](Stack.md) | Stack 的基本概念與操作實作 |
 | [`Queue`](Queue.md) | Queue 的基本概念與操作實作 |
 | [`Using Array to Implement`](Using%20Array%20to%20Implement) | 使用陣列實作 Stack 與 Queue |
 | [`Using Linked List to implement`](Using%20Linked%20List%20to%20implement) | 使用 Linked List 實作 Stack 與 Queue |
