@@ -19,3 +19,6 @@
 2. **熟悉 Stacks/Queues 的應用**：例如 DFS/BFS 的程式實作，確保能靈活使用。  
 3. **模擬考題練習**：針對常見陷阱請AI工具(Copilot)幫忙出題目練習。  
 4. **複習資料結構間的比較**：例如 Array vs Linked List 的 trade-off，確保能快速回答理論題。  
+5. **Bucket 概念**  
+   - **在 Hash Table 中**：每個索引位置可視為一個 bucket，用來存放可能碰撞的元素。    
+   - **總結**：Bucket = 一個用來存放元素的容器單位，常見於 Hashing、排序演算法與分散式資料管理。
