@@ -22,7 +22,3 @@
 
 ## 4. String Hashing
 - **公式**：對字串逐字處理，常用 **Polynomial Rolling Hash**  
-- **舉例**：  
-  \[
-  h(s) = \Big(\sum s[i] \cdot p^i\Big) \mod m
-  \]
