@@ -6,7 +6,7 @@
 
 | 檔案名稱 | 說明 |
 |----------|------|
-| [`Tree 定義`](Tree%20定義.md) | 樹的基本術語與性質 |
+| [`Tree定義`](Tree%20定義.md) | 樹的基本術語與性質 |
 | [`Tree Traversal`](Tree%20Traversal) | 走訪演算法：前序（Pre-order）、中序（In-order）、後序（Post-order）與層序（Level-order） |
 | [`二元樹的類型比較`](二元樹的類型比較) | 比較 Full, Complete, Perfect, Skewed Binary Tree 等類型 |
 | [`常見樹結構及特點`](常見樹結構及特點) | 介紹 Binary Search Tree (BST) 等基礎樹狀結構 |
