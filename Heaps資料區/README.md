@@ -6,10 +6,10 @@
 
 | 檔案名稱                     | 說明                                   |
 |------------------------------|----------------------------------------|
-|[`Heap定義`](Heap定義)        | Heap 的結構特性、完全二元樹條件與 Max/Min Heap 定義             |
-|  [`Why Order Means Priority in a Heap`](Why%20Order%20Means%20Priority%20in%20a%20Heap)                    | 探討 Heap 的順序性如何轉換為優先權管理（Priority）        |
-|  [`將插入及刪除應用在Max Heap`](將插入及刪除應用在Max%20Heap)| Max Heap 的插入（Heapify Up）與刪除（Heapify Down）步驟分解          |
-| [`Operations and Time Complexity`](Operations%20and%20Time%20Complexity)  | 各項操作（Insert, Extract, Build Heap）的時間複雜度分析 |
+|[`Heap定義`](Heap定義.md)        | Heap 的結構特性、完全二元樹條件與 Max/Min Heap 定義             |
+|  [`Why Order Means Priority in a Heap`](Why%20Order%20Means%20Priority%20in%20a%20Heap.md)                    | 探討 Heap 的順序性如何轉換為優先權管理（Priority）        |
+|  [`將插入及刪除應用在Max Heap`](將插入及刪除應用在Max%20Heap.md)| Max Heap 的插入（Heapify Up）與刪除（Heapify Down）步驟分解          |
+| [`Operations and Time Complexity`](Operations%20and%20Time%20Complexity.md)  | 各項操作（Insert, Extract, Build Heap）的時間複雜度分析 |
 
 ##  學習目標
 
