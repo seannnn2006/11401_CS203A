@@ -11,8 +11,7 @@
 |[`圖的表示法比較`](圖的表示法比較.md)   | 比較 Adjacency Matrix 與 Adjacency List 的差異            |
 |[`Pros & Cons Study: Adjacency Matrix`](Pros%20%26%20Cons%20Study%3A%20Adjacency%20Matrix.md)| 相鄰矩陣的優缺點與適用場景分析 |
 |[`Pros & Cons Study: Adjacency List`](Pros%20%26%20Cons%20Study%3A%20Adjacency%20List.md)    | 相鄰串列的優缺點與記憶體效率分析       |
-| [`遍歷方式比較`](遍歷方式比較.md)     |      Tree vs Graph Traversal 筆記
-        |
+| [`遍歷方式比較`](遍歷方式比較.md)     |      Tree vs Graph Traversal 筆記 |
 
 ##  學習目標
 
