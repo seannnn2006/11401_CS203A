@@ -83,7 +83,7 @@
 
 ---
 
-###  Complexity Cheat Sheet
+##  Complexity Cheat Sheet
 
 這是我在實作與分析過程中整理的效能速查表：
 
@@ -100,7 +100,7 @@
 
 ---
 
-###  Applications
+##  Applications
 
 以下是各資料結構在程式設計與演算法中的常見應用場景：
 
@@ -143,7 +143,7 @@
 
 -----
 
-###  Resources
+##  Resources
 
 - [Visualgo - 演算法視覺化工具](https://visualgo.net/zh)  
   演算法與資料結構的互動式視覺化平台，適合快速理解流程。
@@ -154,7 +154,7 @@
   
 -----
 
-###  Contact for Issues
+##  Contact for Issues
 
 若在使用或瀏覽此 repo 時遇到錯誤、連結失效或內容問題，請聯繫我：
 
