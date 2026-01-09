@@ -24,6 +24,7 @@
 
 - **章節筆記 (Modules)**  
   依照不同資料結構分類的學習重點與範例，包括：
+  - Introduction
   - Array
   - Linked List
   - Stack / Queue
@@ -34,8 +35,8 @@
 - **複雜度速查表 (Complexity Cheat Sheet)**  
   快速查詢各種資料結構的時間複雜度，方便在設計與分析演算法時參考。
 
-- **課程導覽 (Introduction)**  
-  提供整體課程架構，幫助快速掌握學習方向。
+- **應用 (Applications)**  
+  整理各種資料結構在程式設計與演算法中的常見應用場景，幫助理解其實際用途。
 
 
 ----------------------------
@@ -88,9 +89,54 @@
 | Stack          | O(1) | O(1) | -    | O(1) | LIFO 結構 |
 | Queue          | O(1) | O(1) | -    | O(1) | FIFO 結構 |
 | Binary Tree    | O(log n) | O(log n) | O(log n) | O(n) | 平衡性影響效率 |
+| Heap           | O(log n)   | O(log n)   | O(n)       | O(1) | 常用於優先佇列 (Priority Queue) |
 | Hash Table     | O(1) | O(1) | O(1) | -    | 須處理碰撞 |
 | Graph (DFS/BFS)| O(V+E) | O(V+E) | O(V+E) | -    | V: 節點數, E: 邊數 |
 
-
+---
 
 ---
+
+###  應用 (Applications)
+
+以下是各資料結構在程式設計與演算法中的常見應用場景：
+
+- **Array**  
+  - 適合固定大小的資料儲存  
+  - 常用於排序演算法 (如 Bubble Sort, Quick Sort)  
+
+- **Linked List**  
+  - 動態記憶體管理  
+  - 適合需要頻繁插入/刪除的場景 (如音樂播放清單)  
+
+- **Stack**  
+  - 函式呼叫堆疊 (Call Stack)  
+  - 括號匹配、字串反轉  
+
+- **Queue**  
+  - 工作排程 (Task Scheduling)  
+  - BFS 演算法、資源共享 (Printer Queue)  
+
+- **Tree**  
+  - 層次化資料儲存 (檔案系統)  
+  - 搜尋與排序 (Binary Search Tree, AVL Tree 等)
+
+- **Binary Tree**  
+  - 層次化資料儲存 (檔案系統)  
+  - 搜尋與排序 (Binary Search Tree)  
+
+- **Heap**  
+  - 優先佇列 (Priority Queue)  
+  - 演算法應用：Dijkstra 最短路徑、Heap Sort  
+
+- **Hash Table**  
+  - 快速查詢 (Dictionary, Symbol Table)  
+  - 資料庫索引、快取系統 (Cache)  
+
+- **Graph**  
+  - 網路連結分析 (Social Network, Web Graph)  
+  - 最短路徑規劃 (Dijkstra, Floyd-Warshall)  
+  - 拓撲排序 (Topological Sort)  
+
+-----
+
