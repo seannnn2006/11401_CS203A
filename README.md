@@ -1,4 +1,4 @@
-#  11401_CS203A 資料結構 (Data Structures)
+#  11401_CS203A Data Structures
 
 > 這裡是我的課程repo，存放所有**作業實作、練習與相關文件**。
 > 專案主要用於 **11401_CS203A Data Structures** 課程的學習與紀錄，涵蓋從基礎到進階的各種專業知識。
@@ -83,7 +83,7 @@
 
 ---
 
-###  複雜度速查 (Complexity Cheat Sheet)
+###  Complexity Cheat Sheet
 
 這是我在實作與分析過程中整理的效能速查表：
 
@@ -100,7 +100,7 @@
 
 ---
 
-###  應用 (Applications)
+###  Applications
 
 以下是各資料結構在程式設計與演算法中的常見應用場景：
 
@@ -143,7 +143,7 @@
 
 -----
 
-###  延伸資源 (Resources)
+###  Resources
 
 - [Visualgo - 演算法視覺化工具](https://visualgo.net/zh)  
   演算法與資料結構的互動式視覺化平台，適合快速理解流程。
@@ -152,7 +152,7 @@
 - [LeetCode](https://leetcode.com/)  
   練習演算法與資料結構題目，適合刷題與促進知識鞏固。
 
-###  (Contact for Issues)
+###  Contact for Issues
 
 若在使用或瀏覽此 repo 時遇到錯誤、連結失效或內容問題，請聯繫我：
 
