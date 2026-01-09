@@ -17,7 +17,6 @@
 * **姓名**：曾偉翔 (WEIXIANG ZENG)
 * **學號**：1133320
 * **系所**：元智大學 資訊工程學系
-* **聯繫**：[s1133320@mail.yzu.edu.tw](mailto:s1133320@mail.yzu.edu.tw)
 * **狀態**：2026 資料結構學習進行中
 
 ---
@@ -152,3 +151,10 @@
 
 - [LeetCode](https://leetcode.com/)  
   練習演算法與資料結構題目，適合刷題與促進知識鞏固。
+
+###  (Contact for Issues)
+
+若在使用或瀏覽此 repo 時遇到錯誤、連結失效或內容問題，請聯繫我：
+
+* **Email**：[s1133320@mail.yzu.edu.tw](mailto:s1133320@mail.yzu.edu.tw)  
+* **維護者**：曾偉翔 (WEIXIANG ZENG)
