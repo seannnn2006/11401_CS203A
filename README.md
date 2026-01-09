@@ -29,6 +29,10 @@
 | **層次架構** | 二元樹、AVL 樹與優先佇列 | [Tree](https://github.com/seannnn2006/11401_CS203A/tree/main/Tree%E8%B3%87%E6%96%99%E5%8D%80) / [Heaps](https://github.com/seannnn2006/11401_CS203A/tree/main/Heaps%E8%B3%87%E6%96%99%E5%8D%80) |
 | **快速索引** | 雜湊函數設計與衝突處理 | [Hashing 區](https://github.com/seannnn2006/11401_CS203A/tree/main/Hashing%E8%B3%87%E6%96%99%E5%8D%80) |
 | **網路連結** | 遍歷算法與最短路徑規劃 | [Graph 資料區](https://github.com/seannnn2006/11401_CS203A/tree/main/Graph%E8%B3%87%E6%96%99%E5%8D%80) |
+| **測驗練習** | 單元小測驗 | [Quiz 區](https://github.com/seannnn2006/11401_CS203A/tree/main/Quiz%E5%8D%80) |
+| **作業提交** | 課堂作業 | [Assignment 區](https://github.com/seannnn2006/11401_CS203A/tree/main/Assignment) |
+| **課程導覽** | 課程架構 | [Introduce](https://github.com/seannnn2006/11401_CS203A/tree/main/Introduction) |
+| **程式實作** | C 語言記憶體實作 | [Code 區](https://github.com/seannnn2006/11401_CS203A/tree/main/Code) |
 
 
 
