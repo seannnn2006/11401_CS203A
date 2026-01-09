@@ -78,6 +78,8 @@
 | **作業提交** | 課堂作業 | [Assignment 區](https://github.com/seannnn2006/11401_CS203A/tree/main/Assignment) |
 | **課程導覽** | 課程架構 | [Introduce](https://github.com/seannnn2006/11401_CS203A/tree/main/Introduction) |
 | **程式實作** | C 語言記憶體實作 | [Code 區](https://github.com/seannnn2006/11401_CS203A/tree/main/Code) |
+| **課程筆記** | 課堂延伸筆記與重點整理 | [Study Note](https://github.com/seannnn2006/11401_CS203A/tree/main/Study%20Note) |
+
 
 
 
